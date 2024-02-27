@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lemon Yellow Emoji</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+ body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.emoji {
+  width: 300px;
+  height: 300px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  position: relative;
+}
+
+.eyes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.eye {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+}
+.left-ball {
+  width: 20px;
+  height: 20px;
+  background-color:black;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 15px;
+  margin-top: 9px;
+}
+.right-ball {
+  width: 20px;
+  height: 20px;
+  background-color:black;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 15px;
+  margin-top: 9px;
+}
+.eyebrows {
+  width: 120px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 70%, 0% 100%, 0% 0%);
+}
+
+.mouth {
+  width: 50px;
+  height: 0px;
+  border: 5px solid black; 
+  position: absolute;
+  top: 70%;
+  left: 40%;
+}
+.emoji:hover{
+  width: 300px;
+  height: 300px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  position: relative;
+  .eyebrows{
+    display: none;
+  }
+  .eyes {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 85px;
+}
+  .eye {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+}
+  .left-ball {
+  width: 20px;
+  height: 20px;
+  background-color:black;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 38px;
+  margin-top: 45px;
+}
+.right-ball {
+  width: 20px;
+  height: 20px;
+  background-color:black;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 38px;
+  margin-top: 45px;
+}
+  .mouth {
+  width: 50px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+  }
+  </style>
+</head>
+<body>
+  <div class="emoji">
+    <div class="eyes">
+      <div class="eye">
+        <div class="left-ball"></div>
+      </div>
+      <div class="eye">
+        <div class="right-ball"></div>
+      </div>
+    </div>
+    <div class="eyebrows"></div>
+    <div class="mouth"></div>
+  </div>
+</body>
+</html>
